@@ -13,7 +13,7 @@ export function Header(){
                         Sobre mim
                     </span>
                 </Link>
-                <Button variant="secondary" className="text-sm md:text-md px-2">Contate-me</Button>
+                <Link href="https://wa.link/d5otyr"><Button variant="secondary" className="text-sm md:text-md px-2">Contate-me</Button></Link>
             </div>
         </header>
     )

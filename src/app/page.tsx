@@ -21,7 +21,7 @@ export default function Home() {
       <h1 className="max-w-lg inline-flex px-8 md:px-0 animate-text-gradient bg-gradient-to-r from-[#e9e9e9] via-[#363636] to-[#e9e9e9] bg-[200%_auto] text-4xl text-center text-transparent font-semibold bg-clip-text">
           Construindo softwares, landing pages & websites.
       </h1>
-      <Link href="https://www.instagram.com/tiagopavanidev/" className="relative inline-flex overflow-hidden rounded-xl p-px mt-6">
+      <Link href="https://wa.link/d5otyr" className="relative inline-flex overflow-hidden rounded-xl p-px mt-6">
         <span className="absolute inset-[-1000%] animate-[spin_2s_linear_infinite] bg-[conic-gradient(from_90deg_at_50%_50%,#c2c2c2_0%,#505050_50%,#bebebe_100%)]" />
         <span className="inline-flex h-full w-full cursor-pointer items-center justify-center rounded-[11px] bg-primary px-6 py-3 text-sm font-medium text-gray-50 backdrop-blur-3xl">
           Entrar em contato
@@ -50,7 +50,7 @@ export default function Home() {
           <ProjectCard link="https://alessandrapavani.com/" title="Curso Studio Alessandra Pavani" description="Um site educacional dedicado ao Curso Studio Alessandra Pavani, oferecendo uma variedade de cursos e recursos para aqueles interessados em aprimorar suas habilidades artísticas e criativas sob a orientação de especialistas renomados." img={project3}/>
           <ProjectCard link="https://alessandrapavani.com/studio/" title="Studio Alessandra Pavani" description="Um site elegante e informativo para o Studio Alessandra Pavani, apresentando os serviços oferecidos pela renomada profissional Alessandra Pavani, incluindo cursos, workshops e consultoria em design de interiores e decoração." img={project4}/>
         </div>
-        <Link href="https://www.instagram.com/tiagopavanidev/" className="relative inline-flex overflow-hidden rounded-xl p-px mt-6">
+        <Link href="https://wa.link/d5otyr" className="relative inline-flex overflow-hidden rounded-xl p-px mt-6">
           <span className="absolute inset-[-1000%] animate-[spin_2s_linear_infinite] bg-[conic-gradient(from_90deg_at_50%_50%,#c2c2c2_0%,#505050_50%,#bebebe_100%)]" />
           <span className="inline-flex h-full w-full cursor-pointer items-center justify-center rounded-[11px] bg-primary px-6 py-3 text-sm font-medium text-gray-50 backdrop-blur-3xl">
             Entrar em contato
