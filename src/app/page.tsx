@@ -1,112 +1,61 @@
 import Image from "next/image";
+import wavingHand from "../../public/waving-hand.png"
+import project1 from "../../public/project1.png"
+import project2 from "../../public/project2.png"
+import project3 from "../../public/project3.png"
+import project4 from "../../public/project4.png"
+import { ArrowDownIcon } from "@radix-ui/react-icons";
+import { ProjectCard } from "@/components/ui/ProjectCard";
+import Link from "next/link";
 
 export default function Home() {
   return (
-    <main className="flex min-h-screen flex-col items-center justify-between p-24">
-      <div className="z-10 w-full max-w-5xl items-center justify-between font-mono text-sm lg:flex">
-        <p className="fixed left-0 top-0 flex w-full justify-center border-b border-gray-300 bg-gradient-to-b from-zinc-200 pb-6 pt-8 backdrop-blur-2xl dark:border-neutral-800 dark:bg-zinc-800/30 dark:from-inherit lg:static lg:w-auto  lg:rounded-xl lg:border lg:bg-gray-200 lg:p-4 lg:dark:bg-zinc-800/30">
-          Get started by editing&nbsp;
-          <code className="font-mono font-bold">src/app/page.tsx</code>
-        </p>
-        <div className="fixed bottom-0 left-0 flex h-48 w-full items-end justify-center bg-gradient-to-t from-white via-white dark:from-black dark:via-black lg:static lg:size-auto lg:bg-none">
-          <a
-            className="pointer-events-none flex place-items-center gap-2 p-8 lg:pointer-events-auto lg:p-0"
-            href="https://vercel.com?utm_source=create-next-app&utm_medium=appdir-template&utm_campaign=create-next-app"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            By{" "}
-            <Image
-              src="/vercel.svg"
-              alt="Vercel Logo"
-              className="dark:invert"
-              width={100}
-              height={24}
-              priority
-            />
-          </a>
+    <main className="flex flex-col h-full w-full items-center">
+    <div className="absolute top-0 z-[-2] h-full w-full bg-neutral-950 bg-[radial-gradient(ellipse_80%_80%_at_50%_-20%,rgba(120,119,198,0.3),rgba(255,255,255,0))]"></div>      
+      <div className="flex flex-col items-center justify-center h-screen gap-4">
+        <Image alt="foto de tiago pavani" src="https://avatars.githubusercontent.com/u/108679395?v=4" className="w-24 h-24 rounded-full" sizes="100vw" width={0} height={0}/>
+        <h3 className="flex items-center text-sm text-neutral-400">
+          Olá, eu sou Tiago. 
+        <Image alt="waving hand emoji" src={wavingHand} className="object-contain ml-2 w-5 h-5"/>
+        </h3>
+      <h1 className="max-w-lg inline-flex px-8 md:px-0 animate-text-gradient bg-gradient-to-r from-[#e9e9e9] via-[#363636] to-[#e9e9e9] bg-[200%_auto] text-4xl text-center text-transparent font-semibold bg-clip-text">
+          Construindo softwares, landing pages & websites.
+      </h1>
+      <Link href="https://www.instagram.com/tiagopavanidev/" className="relative inline-flex overflow-hidden rounded-xl p-px mt-6">
+        <span className="absolute inset-[-1000%] animate-[spin_2s_linear_infinite] bg-[conic-gradient(from_90deg_at_50%_50%,#c2c2c2_0%,#505050_50%,#bebebe_100%)]" />
+        <span className="inline-flex h-full w-full cursor-pointer items-center justify-center rounded-[11px] bg-primary px-6 py-3 text-sm font-medium text-gray-50 backdrop-blur-3xl">
+          Entrar em contato
+        </span>
+      </Link>
+      <ArrowDownIcon className="absolute bottom-4 text-white w-8 h-8 animate-bounce"/>
+      </div>
+      <div id="about" className="flex flex-col items-center w-full h-full bg-neutral-950 pt-20">
+        <h1 className="text-4xl font-bold bg-gradient-to-b from-white to-neutral-700 text-transparent bg-clip-text">
+          Sobre mim
+        </h1>
+        <div className="max-w-lg text-center text-md font-medium mt-4">
+          <p className="text-neutral-300 mb-6">
+            Olá! Sou um freelancer há 3 anos, especializado em web design e engenharia de software. Tenho paixão por resolver problemas para empresas e empreendedores, ajudando a impulsionar suas vendas por meio de landing pages e softwares personalizados.
+          </p>
+          <p className="text-neutral-300">
+            Estou sempre em busca de desafios interessantes e novas oportunidades para aplicar minhas habilidades e conhecimentos. Se você precisa de soluções eficazes para melhorar sua presença online e impulsionar seus negócios, estou aqui para ajudar!
+          </p>
         </div>
-      </div>
-
-      <div className="relative z-[-1] flex place-items-center before:absolute before:h-[300px] before:w-full before:-translate-x-1/2 before:rounded-full before:bg-gradient-radial before:from-white before:to-transparent before:blur-2xl before:content-[''] after:absolute after:-z-20 after:h-[180px] after:w-full after:translate-x-1/3 after:bg-gradient-conic after:from-sky-200 after:via-blue-200 after:blur-2xl after:content-[''] before:dark:bg-gradient-to-br before:dark:from-transparent before:dark:to-blue-700 before:dark:opacity-10 after:dark:from-sky-900 after:dark:via-[#0141ff] after:dark:opacity-40 sm:before:w-[480px] sm:after:w-[240px] before:lg:h-[360px]">
-        <Image
-          className="relative dark:drop-shadow-[0_0_0.3rem_#ffffff70] dark:invert"
-          src="/next.svg"
-          alt="Next.js Logo"
-          width={180}
-          height={37}
-          priority
-        />
-      </div>
-
-      <div className="mb-32 grid text-center lg:mb-0 lg:w-full lg:max-w-5xl lg:grid-cols-4 lg:text-left">
-        <a
-          href="https://nextjs.org/docs?utm_source=create-next-app&utm_medium=appdir-template&utm_campaign=create-next-app"
-          className="group rounded-lg border border-transparent px-5 py-4 transition-colors hover:border-gray-300 hover:bg-gray-100 hover:dark:border-neutral-700 hover:dark:bg-neutral-800/30"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <h2 className="mb-3 text-2xl font-semibold">
-            Docs{" "}
-            <span className="inline-block transition-transform group-hover:translate-x-1 motion-reduce:transform-none">
-              -&gt;
-            </span>
-          </h2>
-          <p className="m-0 max-w-[30ch] text-sm opacity-50">
-            Find in-depth information about Next.js features and API.
-          </p>
-        </a>
-
-        <a
-          href="https://nextjs.org/learn?utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-          className="group rounded-lg border border-transparent px-5 py-4 transition-colors hover:border-gray-300 hover:bg-gray-100 hover:dark:border-neutral-700 hover:dark:bg-neutral-800/30"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <h2 className="mb-3 text-2xl font-semibold">
-            Learn{" "}
-            <span className="inline-block transition-transform group-hover:translate-x-1 motion-reduce:transform-none">
-              -&gt;
-            </span>
-          </h2>
-          <p className="m-0 max-w-[30ch] text-sm opacity-50">
-            Learn about Next.js in an interactive course with&nbsp;quizzes!
-          </p>
-        </a>
-
-        <a
-          href="https://vercel.com/templates?framework=next.js&utm_source=create-next-app&utm_medium=appdir-template&utm_campaign=create-next-app"
-          className="group rounded-lg border border-transparent px-5 py-4 transition-colors hover:border-gray-300 hover:bg-gray-100 hover:dark:border-neutral-700 hover:dark:bg-neutral-800/30"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <h2 className="mb-3 text-2xl font-semibold">
-            Templates{" "}
-            <span className="inline-block transition-transform group-hover:translate-x-1 motion-reduce:transform-none">
-              -&gt;
-            </span>
-          </h2>
-          <p className="m-0 max-w-[30ch] text-sm opacity-50">
-            Explore starter templates for Next.js.
-          </p>
-        </a>
-
-        <a
-          href="https://vercel.com/new?utm_source=create-next-app&utm_medium=appdir-template&utm_campaign=create-next-app"
-          className="group rounded-lg border border-transparent px-5 py-4 transition-colors hover:border-gray-300 hover:bg-gray-100 hover:dark:border-neutral-700 hover:dark:bg-neutral-800/30"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <h2 className="mb-3 text-2xl font-semibold">
-            Deploy{" "}
-            <span className="inline-block transition-transform group-hover:translate-x-1 motion-reduce:transform-none">
-              -&gt;
-            </span>
-          </h2>
-          <p className="m-0 max-w-[30ch] text-balance text-sm opacity-50">
-            Instantly deploy your Next.js site to a shareable URL with Vercel.
-          </p>
-        </a>
+        <h1 className="text-4xl font-bold bg-gradient-to-b from-white to-neutral-700 text-transparent bg-clip-text mt-20">
+          Meus Projetos
+        </h1>
+        <div className="grid md:grid-cols-2 gap-6 mt-12">
+          <ProjectCard link="https://www.carlostortorellaimoveis.com.br/" title="Imobiliária Carlos Tortorella" description="Um site moderno e responsivo para a Imobiliária Carlos Tortorella, oferecendo aos clientes uma experiência intuitiva de busca de imóveis e informações detalhadas sobre propriedades disponíveis." img={project1}/>
+          <ProjectCard link="https://marmitaria-ten.vercel.app/" title="Marmitaria Sabor ao ponto" description="Uma plataforma online para a Marmitaria Sabor ao Ponto, permitindo que os clientes façam pedidos de refeições deliciosas de forma conveniente e rápida, com opções personalizadas." img={project2}/>
+          <ProjectCard link="https://alessandrapavani.com/" title="Curso Studio Alessandra Pavani" description="Um site educacional dedicado ao Curso Studio Alessandra Pavani, oferecendo uma variedade de cursos e recursos para aqueles interessados em aprimorar suas habilidades artísticas e criativas sob a orientação de especialistas renomados." img={project3}/>
+          <ProjectCard link="https://alessandrapavani.com/studio/" title="Studio Alessandra Pavani" description="Um site elegante e informativo para o Studio Alessandra Pavani, apresentando os serviços oferecidos pela renomada profissional Alessandra Pavani, incluindo cursos, workshops e consultoria em design de interiores e decoração." img={project4}/>
+        </div>
+        <Link href="https://www.instagram.com/tiagopavanidev/" className="relative inline-flex overflow-hidden rounded-xl p-px mt-6">
+          <span className="absolute inset-[-1000%] animate-[spin_2s_linear_infinite] bg-[conic-gradient(from_90deg_at_50%_50%,#c2c2c2_0%,#505050_50%,#bebebe_100%)]" />
+          <span className="inline-flex h-full w-full cursor-pointer items-center justify-center rounded-[11px] bg-primary px-6 py-3 text-sm font-medium text-gray-50 backdrop-blur-3xl">
+            Entrar em contato
+          </span>
+        </Link>
       </div>
     </main>
   );
