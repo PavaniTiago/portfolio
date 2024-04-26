@@ -21,6 +21,11 @@ export default function Home() {
       <h1 className="max-w-lg inline-flex px-8 md:px-0 animate-text-gradient bg-gradient-to-r from-[#e9e9e9] via-[#363636] to-[#e9e9e9] bg-[200%_auto] text-4xl text-center text-transparent font-semibold bg-clip-text">
           Construindo softwares, landing pages & websites.
       </h1>
+      <div className="max-w-lg text-center px-6 lg:px-0 text-md leading-5 mt-4">
+          <p className="text-neutral-300">
+            Deseja criar o seu software, landing page ou site institucional para você ou para sua empresa? Clique no botão abaixo para fazer um orçamento 👇
+          </p>
+      </div>
       <Link href="https://wa.link/d5otyr" className="relative inline-flex overflow-hidden rounded-xl p-px mt-6">
         <span className="absolute inset-[-1000%] animate-[spin_2s_linear_infinite] bg-[conic-gradient(from_90deg_at_50%_50%,#c2c2c2_0%,#505050_50%,#bebebe_100%)]" />
         <span className="inline-flex h-full w-full cursor-pointer items-center justify-center rounded-[11px] bg-primary px-6 py-3 text-sm font-medium text-gray-50 backdrop-blur-3xl">
@@ -33,7 +38,7 @@ export default function Home() {
         <h1 className="text-4xl font-bold bg-gradient-to-b from-white to-neutral-700 text-transparent bg-clip-text">
           Sobre mim
         </h1>
-        <div className="max-w-lg text-center text-md font-medium mt-4">
+        <div className="max-w-lg text-center px-6 lg:px-0 text-md font-medium mt-4">
           <p className="text-neutral-300 mb-6">
             Olá! Sou um freelancer há 3 anos, especializado em web design e engenharia de software. Tenho paixão por resolver problemas para empresas e empreendedores, ajudando a impulsionar suas vendas por meio de landing pages e softwares personalizados.
           </p>
@@ -41,6 +46,12 @@ export default function Home() {
             Estou sempre em busca de desafios interessantes e novas oportunidades para aplicar minhas habilidades e conhecimentos. Se você precisa de soluções eficazes para melhorar sua presença online e impulsionar seus negócios, estou aqui para ajudar!
           </p>
         </div>
+        <Link href="https://wa.link/d5otyr" className="relative inline-flex overflow-hidden rounded-xl p-px mt-6">
+          <span className="absolute inset-[-1000%] animate-[spin_2s_linear_infinite] bg-[conic-gradient(from_90deg_at_50%_50%,#c2c2c2_0%,#505050_50%,#bebebe_100%)]" />
+          <span className="inline-flex h-full w-full cursor-pointer items-center justify-center rounded-[11px] bg-primary px-6 py-3 text-sm font-medium text-gray-50 backdrop-blur-3xl">
+            Entrar em contato
+          </span>
+        </Link>
         <h1 className="text-4xl font-bold bg-gradient-to-b from-white to-neutral-700 text-transparent bg-clip-text mt-20">
           Meus Projetos
         </h1>
