@@ -9,13 +9,15 @@ interface ProjectCard {
   title: string;
   description: string;
   link: string;
+  dataAos: string;
 }
-export function ProjectCard({ img, title, description, link }: ProjectCard) {
+export function ProjectCard({ img, title, description, link, dataAos }: ProjectCard) {
   const mouseX = useMotionValue(0);
   const mouseY = useMotionValue(0);
 
   return (
     <div
+    data-aos={dataAos}
       onMouseMove={(e) => {
         const { left, top } = e.currentTarget.getBoundingClientRect();
 
